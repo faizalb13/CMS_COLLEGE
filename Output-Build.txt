@@ -1,0 +1,17 @@
+﻿1>------ Build started: Project: CMS_COLLEGE, Configuration: Debug Any CPU ------
+1>D:\PROJECTS\MY PROJECT IMAGE\CMS_COLLEGE\CMS_COLLEGE\NEW_STU.cs(15,7,15,21): warning CS0105: The using directive for 'System.Drawing' appeared previously in this namespace
+1>D:\PROJECTS\MY PROJECT IMAGE\CMS_COLLEGE\CMS_COLLEGE\NEW_STU.cs(334,19,334,48): warning CS0252: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'string'
+1>D:\PROJECTS\MY PROJECT IMAGE\CMS_COLLEGE\CMS_COLLEGE\NEW_STU.cs(342,17,342,50): warning CS0252: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'string'
+1>D:\PROJECTS\MY PROJECT IMAGE\CMS_COLLEGE\CMS_COLLEGE\NEW_STU.cs(349,17,349,49): warning CS0252: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'string'
+1>D:\PROJECTS\MY PROJECT IMAGE\CMS_COLLEGE\CMS_COLLEGE\NEW_STU.cs(356,17,356,46): warning CS0252: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'string'
+1>D:\PROJECTS\MY PROJECT IMAGE\CMS_COLLEGE\CMS_COLLEGE\NEW_STU.cs(362,17,362,52): warning CS0252: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'string'
+1>D:\PROJECTS\MY PROJECT IMAGE\CMS_COLLEGE\CMS_COLLEGE\ADMIN.cs(18,20,18,23): warning CS0169: The field 'CMS_COLLEGE.ADMIN.cmd' is never used
+1>D:\PROJECTS\MY PROJECT IMAGE\CMS_COLLEGE\CMS_COLLEGE\ADMIN.cs(19,23,19,25): warning CS0169: The field 'CMS_COLLEGE.ADMIN.dr' is never used
+1>D:\PROJECTS\MY PROJECT IMAGE\CMS_COLLEGE\CMS_COLLEGE\NEW_STU.cs(25,24,25,26): warning CS0169: The field 'CMS_COLLEGE.NEW_STU.da' is never used
+1>D:\PROJECTS\MY PROJECT IMAGE\CMS_COLLEGE\CMS_COLLEGE\NEW_STU.cs(29,17,29,21): warning CS0414: The field 'CMS_COLLEGE.NEW_STU.emai' is assigned but its value is never used
+1>D:\PROJECTS\MY PROJECT IMAGE\CMS_COLLEGE\CMS_COLLEGE\NEW_STU.cs(29,22,29,25): warning CS0169: The field 'CMS_COLLEGE.NEW_STU.txt' is never used
+1>D:\PROJECTS\MY PROJECT IMAGE\CMS_COLLEGE\CMS_COLLEGE\NEW_STU.cs(30,13,30,14): warning CS0414: The field 'CMS_COLLEGE.NEW_STU.a' is assigned but its value is never used
+1>D:\PROJECTS\MY PROJECT IMAGE\CMS_COLLEGE\CMS_COLLEGE\NEW_STU.cs(32,16,32,26): warning CS0169: The field 'CMS_COLLEGE.NEW_STU.photo_aray' is never used
+1>D:\PROJECTS\MY PROJECT IMAGE\CMS_COLLEGE\CMS_COLLEGE\UPDATE_ADMIN.cs(20,24,20,26): warning CS0169: The field 'CMS_COLLEGE.UPDATE_ADMIN.da' is never used
+1>  CMS_COLLEGE -> D:\PROJECTS\MY PROJECT IMAGE\CMS_COLLEGE\CMS_COLLEGE\bin\Debug\CMS_COLLEGE.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

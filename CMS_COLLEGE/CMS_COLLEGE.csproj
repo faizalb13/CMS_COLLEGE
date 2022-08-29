@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{673304F2-8658-4D2F-BF38-4E4F375C4911}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CMS_COLLEGE</RootNamespace>
+    <AssemblyName>CMS_COLLEGE</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABOUT_SOFT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABOUT_SOFT.Designer.cs">
+      <DependentUpon>ABOUT_SOFT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN.Designer.cs">
+      <DependentUpon>ADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cmsclgdatabase.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cmsclgdatabase.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cmsclgDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cmsclgDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cmsclgDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cmsclgDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cmsclgDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cmsclgDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cmsDataset1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cmsDataset1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="COURSE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COURSE.Designer.cs">
+      <DependentUpon>COURSE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EVENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EVENT.Designer.cs">
+      <DependentUpon>EVENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FINANCE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FINANCE.Designer.cs">
+      <DependentUpon>FINANCE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FINANCE_FAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FINANCE_FAC.Designer.cs">
+      <DependentUpon>FINANCE_FAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HOME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HOME.Designer.cs">
+      <DependentUpon>HOME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ICARD_STU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ICARD_STU.Designer.cs">
+      <DependentUpon>ICARD_STU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODIFY_COURSE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODIFY_COURSE.Designer.cs">
+      <DependentUpon>MODIFY_COURSE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mycms.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mycms.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="myfirstdata1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myfirstdata1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NEW_FAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW_FAC.Designer.cs">
+      <DependentUpon>NEW_FAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEW_STU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW_STU.Designer.cs">
+      <DependentUpon>NEW_STU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recipt_stu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recipt_stu.Designer.cs">
+      <DependentUpon>recipt_stu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RESULT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RESULT.Designer.cs">
+      <DependentUpon>RESULT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STREAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STREAM.Designer.cs">
+      <DependentUpon>STREAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UPDATE_ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UPDATE_ADMIN.Designer.cs">
+      <DependentUpon>UPDATE_ADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UPDATE_EVENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UPDATE_EVENT.Designer.cs">
+      <DependentUpon>UPDATE_EVENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UPDATE_FAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UPDATE_FAC.Designer.cs">
+      <DependentUpon>UPDATE_FAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UPDATE_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UPDATE_PRO.Designer.cs">
+      <DependentUpon>UPDATE_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW_STUDY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW_STUDY.Designer.cs">
+      <DependentUpon>VIEW_STUDY.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ABOUT_SOFT.resx">
+      <DependentUpon>ABOUT_SOFT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN.resx">
+      <DependentUpon>ADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COURSE.resx">
+      <DependentUpon>COURSE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EVENT.resx">
+      <DependentUpon>EVENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FINANCE.resx">
+      <DependentUpon>FINANCE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FINANCE_FAC.resx">
+      <DependentUpon>FINANCE_FAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HOME.resx">
+      <DependentUpon>HOME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ICARD_STU.resx">
+      <DependentUpon>ICARD_STU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODIFY_COURSE.resx">
+      <DependentUpon>MODIFY_COURSE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW_FAC.resx">
+      <DependentUpon>NEW_FAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW_STU.resx">
+      <DependentUpon>NEW_STU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="recipt_stu.resx">
+      <DependentUpon>recipt_stu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RESULT.resx">
+      <DependentUpon>RESULT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STREAM.resx">
+      <DependentUpon>STREAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UPDATE_ADMIN.resx">
+      <DependentUpon>UPDATE_ADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UPDATE_EVENT.resx">
+      <DependentUpon>UPDATE_EVENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UPDATE_FAC.resx">
+      <DependentUpon>UPDATE_FAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UPDATE_PRO.resx">
+      <DependentUpon>UPDATE_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW_STUDY.resx">
+      <DependentUpon>VIEW_STUDY.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="cmsclgdatabase.xsc">
+      <DependentUpon>cmsclgdatabase.xsd</DependentUpon>
+    </None>
+    <None Include="cmsclgdatabase.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cmsclgdatabase.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cmsclgdatabase.xss">
+      <DependentUpon>cmsclgdatabase.xsd</DependentUpon>
+    </None>
+    <None Include="cmsclgDataSet.xsc">
+      <DependentUpon>cmsclgDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cmsclgDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cmsclgDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cmsclgDataSet.xss">
+      <DependentUpon>cmsclgDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cmsclgDataSet1.xsc">
+      <DependentUpon>cmsclgDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="cmsclgDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cmsclgDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cmsclgDataSet1.xss">
+      <DependentUpon>cmsclgDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="cmsclgDataSet2.xsc">
+      <DependentUpon>cmsclgDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="cmsclgDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cmsclgDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cmsclgDataSet2.xss">
+      <DependentUpon>cmsclgDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="cmsDataset1.xsc">
+      <DependentUpon>cmsDataset1.xsd</DependentUpon>
+    </None>
+    <None Include="cmsDataset1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cmsDataset1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cmsDataset1.xss">
+      <DependentUpon>cmsDataset1.xsd</DependentUpon>
+    </None>
+    <None Include="mycms.xsc">
+      <DependentUpon>mycms.xsd</DependentUpon>
+    </None>
+    <None Include="mycms.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mycms.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mycms.xss">
+      <DependentUpon>mycms.xsd</DependentUpon>
+    </None>
+    <None Include="myfirstdata1.xsc">
+      <DependentUpon>myfirstdata1.xsd</DependentUpon>
+    </None>
+    <None Include="myfirstdata1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myfirstdata1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myfirstdata1.xss">
+      <DependentUpon>myfirstdata1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modern-black-abstract-background-with-gold-line_67845-865.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.4.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 4.0 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="faculty.txt" />
+    <Content Include="student.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

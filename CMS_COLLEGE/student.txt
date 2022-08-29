@@ -1,0 +1,7 @@
+C-sharp College                                                                                     
+21-Oct-20 12:07:42 PM;
+Student ID:	3;
+Student Name:	ABC                                               ;
+DOB:	07-Jul-05 12:00:00 AM;
+Total Fee:	50000;
+Pay Fee:	22500;
